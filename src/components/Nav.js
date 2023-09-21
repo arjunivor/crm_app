@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import logo from '../images/crm.png'
 
 const Nav = () => {
+    const navigate = useNavigate()
     return (
         <nav>
             <div className="logo-container">
