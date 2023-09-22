@@ -1,6 +1,4 @@
 const StatusDisplay = () => {
-    return (
-        <div>StatusDisplay</div>
-    )
-}
-export default StatusDisplay
+  return <div>StatusDisplay</div>;
+};
+export default StatusDisplay;
