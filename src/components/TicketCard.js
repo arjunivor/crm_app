@@ -5,12 +5,12 @@ import PriorityDisplay from "./PriorityDisplay";
 import ProgressDisplay from "./ProgressDisplay";
 import StatusDisplay from "./StatusDisplay";
 
-const TicketCard = () => {
+const TicketCard = ({ color, ticket }) => {
   return (
     <div className="ticket-card">
-      <Link>
+      <Link to={"/ticket/${ticket.documentId}"} id="link">
         <div className="ticket-color"></div>
-        <h3>title</h3>
+        <h3>{ticket.title}</h3>
         <AvatarDisplay />
         <StatusDisplay />
         <PriorityDisplay />
