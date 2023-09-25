@@ -20,6 +20,7 @@ const TicketPage = () => {
       [name]: value,
     }));
   };
+  const categories = ["test1, test2"];
 
   console.log(formData);
 
@@ -45,7 +46,30 @@ const TicketPage = () => {
               type="text"
               onChange={handleChange}
               required={true}
-              value={formData.title}
+              value={formData.description}
+            />
+
+            <label>Category</label>
+            <select
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
+            ></select>
+
+            {categories?.map((category, _index) => (
+              <option key={_index} value={category}>
+                {category}
+              </option>
+            ))}
+
+            <label htmlFor="new-category">New Category</label>
+            <input
+              id="new-category"
+              name="category"
+              type="text"
+              onChange={handleChange}
+              required={true}
+              value={formData.category}
             />
           </section>
         </form>
