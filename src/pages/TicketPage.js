@@ -20,7 +20,7 @@ const TicketPage = () => {
       [name]: value,
     }));
   };
-  const categories = ["test1, test2"];
+  const categories = ["test1", "test2"];
 
   console.log(formData);
 
