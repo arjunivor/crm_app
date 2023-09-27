@@ -39,7 +39,7 @@ const TicketPage = () => {
               required={true}
               value={formData.title}
             />
-            <label htmlFor="description">description</label>
+            <label htmlFor="description">Description</label>
             <input
               id="description"
               name="description"
