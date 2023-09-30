@@ -4,7 +4,6 @@ const Dashboard = () => {
   const tickets = [
     {
       category: "Q3 2023",
-      color: "red",
       title: "NFT Safety 101 video",
       owner: "Arjun Ivor",
       avatar: "https://thenounproject.com/browse/icons/term/default-avatar/",
